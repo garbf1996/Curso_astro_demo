@@ -1,4 +1,5 @@
 ---
+import { Counter } from "./Counter";
 import HeaderButton from "./HeaderButton.astro";
 console.log("hola mundo")
 ---
@@ -13,6 +14,7 @@ SpaceX Launches 🚀
     A list of SpaceX launches 
  </p>
 </div>
+<Counter client:visible transition:persist />
 <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
  <HeaderButton href="#" class=" text-whit0">
   <svg slot="before"  width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -21,7 +23,7 @@ SpaceX Launches 🚀
    <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path>
    <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
 </svg>
-    Ultimos lanzamientos
+    Últimos lanzamientos
  </HeaderButton>
  <HeaderButton href="/proyecto" class=" text-white">
   <svg 
@@ -42,6 +44,6 @@ SpaceX Launches 🚀
    <path d="M19 16v6"></path>
    <path d="M22 19l-3 3l-3 -3"></path>
 </svg>
-    Los mas viejos
+   Los más viejos
  </HeaderButton>
-</header>
+</header>./Counter.tsx
