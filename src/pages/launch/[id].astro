@@ -6,7 +6,6 @@ export const prerender = false
 
 const {id} = Astro.params
 
-console.log({id})
 
 let launch
 
@@ -14,7 +13,8 @@ if(id){
   launch = await getLaunchesBy({id})
 }
 
-console.log({launch})
+
+
 ---
 <Layout title="Launch">
 
